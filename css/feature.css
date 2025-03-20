@@ -1,14 +1,15 @@
 .container {
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    gap: 25px;
+    grid-template-columns: 1fr 4fr;
 }
 
 .product {
-    border: 2px solid black;
-    border-radius: 20px;
+    border: 1px solid black;
     padding: 20px;
     text-align: center;
+}
+.product > img {
+    border-radius: 10px;
 }
 
 img {
@@ -18,7 +19,6 @@ img {
 header {
     width: 100%;
     height: 100px;
-    margin-bottom: 20px;
 }
 nav {
     height: 100%;
@@ -37,16 +37,13 @@ nav > p {
 }
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    background-color: blue;
-    gap: 12px;
+    grid-template-columns: repeat(4, 1fr);
+    border: 1px solid black;
     padding: 12px;
-    
-
+    gap: 12px;
 }
 .grid > div {
     background-color: gray;
-    height: 100%;
     width: 100%; /* Ensures responsiveness */
     max-width: 400px; /* Limits maximum size */
     padding: 0;
@@ -56,7 +53,6 @@ nav > p {
     flex-direction: column;
     align-items: center;
     background: #f9f9f9;
-    margin: 12px;
 }
 .grid img {
     width: 100%;
@@ -65,8 +61,9 @@ nav > p {
 }
 .grid p {
     font-size: 14px; /* Adjust font size */
-    margin: 5px 0;
+    margin: 12px;
     word-wrap: break-word; /* Prevents text overflow */
+    padding: 0;
 }
 .grid button {
     padding: 5px 10px;
@@ -75,17 +72,18 @@ nav > p {
     cursor: pointer;
 }
 .hero {
-    height: 300px;
-    background-color: grey;
-    margin-bottom: 12px;
+    height: 450px;
+    background-color: wheat;
 }
 main {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 4fr 1fr;
 }
 aside {
-    background-color: red;
+    border: 1px solid black;
+    padding-top: 12px;
 }
+
 footer {
     height: 120px;
     text-align: center;
@@ -96,4 +94,10 @@ h2 {
 img {
     margin: 0;
     border: 2px solid black;
+}
+h6 {
+    padding: 0;
+    height: auto;
+    display: flex;
+
 }

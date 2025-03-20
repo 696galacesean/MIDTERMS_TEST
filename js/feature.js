@@ -37,7 +37,31 @@ function removeFromCart(productName, productPrice) {
     updateCartDisplay();
 }
 
+function calculateTotalPrice() {
+    let total = 0;
+    for (let product in cart) {
+        total += cart[product].totalPrice;
+    }
+    return total;
+}
+
 // Function to update the cart display on the webpage
+function updateCartDisplay() {
+    const cartList = document.getElementById('products');
+    cartList.innerHTML = ''; // Clear the current cart list
+
+    // Loop through the cart object and display each product
+    for (let product in cart) {
+        const listItem = document.createElement('li');
+        listItem.innerText = `${product} 
+                            - Quantity: ${cart[product].quantity} 
+                            - Total Product Price: Php ${cart[product].totalPrice.toFixed(2)}`;
+        cartList.appendChild(listItem); // Add the item to the cart list
+    }
+
+    // Calculate and display the total price
+   
+}
 function updateCartDisplay() {
     const cartList = document.getElementById('products');
     cartList.innerHTML = ''; // Clear the current cart list
@@ -50,4 +74,8 @@ function updateCartDisplay() {
                             - Total Price: Php ${cart[product].totalPrice.toFixed(2)}`;
         cartList.appendChild(listItem); // Add the item to the cart list
     }
+    const totalPrice = calculateTotalPrice();
+    const totalPriceElement = document.createElement('div');
+    totalPriceElement.innerText = `Total Price: Php ${totalPrice.toFixed(2)}`;
+    cartList.appendChild(totalPriceElement);
 }
