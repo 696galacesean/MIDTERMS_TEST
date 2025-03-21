@@ -35,14 +35,18 @@ nav > p {
 
 main {
     display: grid;
+    grid-template-columns: 4fr 1fr;
+    width: 100%;
 }
 .sub_main {
     display: grid;
-    grid-template-columns: 4fr 1fr;
 }
 .all_about_me {
     display: grid;
-    grid-template-row: 1;
+}
+.box {
+    background-color: blue;
+    margin: 5px;
 }
 h1 {
     text-align: center;
