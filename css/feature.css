@@ -144,6 +144,7 @@ h2 {
 img {
     margin: 0;
     border: 2px solid black;
+    aspect-ratio: 3/4;
 }
 .total-cart-price {
     margin-top: 12px;

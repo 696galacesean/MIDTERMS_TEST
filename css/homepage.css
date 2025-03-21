@@ -51,3 +51,19 @@ main {
 h1 {
     text-align: center;
 }
+img {
+    width: 100%;
+    aspect-ratio: 3/4;
+}
+.hero {
+    background-image: url('../AirJordan4Retro_12685.png');
+    background-size: cover;
+}
+
+footer {
+    height: 120px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    align-content: center;
+}
