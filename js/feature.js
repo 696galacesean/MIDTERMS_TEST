@@ -72,7 +72,7 @@ function updateCartDisplay() {
         listItem.innerText = `${product} 
                              Quantity: ${cart[product].quantity} 
                              Total Price: Php ${cart[product].totalPrice.toFixed(2)}`;
-        listItem.classList.add("list_of_items")
+        listItem.classList.add("list_of_items");
         cartList.appendChild(listItem); // Add the item to the cart list
     }
     const totalPrice = calculateTotalPrice();
