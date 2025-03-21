@@ -14,8 +14,7 @@
     left: 8px;
     top: 50px;
 }
-.container > .product {
-}
+
 .product > img {
     border-radius: 10px;
 }
@@ -52,6 +51,7 @@ nav > .buttons > a {
 body {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 nav > p {
     color: white;
@@ -145,12 +145,6 @@ img {
     margin: 0;
     border: 2px solid black;
 }
-h6 {
-    padding: 0;
-    height: auto;
-    display: flex;
-
-}
 .total-cart-price {
     margin-top: 12px;
     align-items: center;
@@ -166,5 +160,7 @@ h6 {
     color: black;
     margin-bottom: 10px;
     border-radius: 1px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
