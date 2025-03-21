@@ -70,12 +70,14 @@ function updateCartDisplay() {
     for (let product in cart) {
         const listItem = document.createElement('li');
         listItem.innerText = `${product} 
-                            - Quantity: ${cart[product].quantity} 
-                            - Total Price: Php ${cart[product].totalPrice.toFixed(2)}`;
+                             Quantity: ${cart[product].quantity} 
+                             Total Price: Php ${cart[product].totalPrice.toFixed(2)}`;
+        listItem.classList.add("list_of_items")
         cartList.appendChild(listItem); // Add the item to the cart list
     }
     const totalPrice = calculateTotalPrice();
     const totalPriceElement = document.createElement('div');
     totalPriceElement.innerText = `Total Price: Php ${totalPrice.toFixed(2)}`;
+    totalPriceElement.classList.add("total-cart-price");
     cartList.appendChild(totalPriceElement);
 }
